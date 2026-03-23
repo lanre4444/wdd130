@@ -17,6 +17,11 @@ header {
     color: var(--accent2-color);
 }
 
+/*  */
+footer {
+    background-color: var(--secondary-color);
+}
+
 /* reset */
 * {
     margin: 0;
@@ -69,6 +74,16 @@ article {
     display: block;
     width: 100%;
     height: auto;
+}
+
+/* hero article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
 }
 
 /* styling heading */
