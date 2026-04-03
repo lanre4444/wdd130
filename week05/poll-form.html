@@ -4,63 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poll Form</title>
+    <title>User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Website Poll</h1>
+        <h1>User Poll</h1>
     </header>
 
     <main>
         <form>
 
-            <!-- Full Name -->
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <fieldset>
+                <legend>Contact Information</legend>
 
-            <br><br>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-            <!-- Email -->
-            <label for="useremail">Email:</label>
-            <input type="email" id="useremail" name="useremail" required>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
 
-            <br><br>
+            </fieldset>
 
-            <!-- Favorite Browser -->
-            <label for="browser">What is your favorite browser?</label>
-            <select id="browser" name="browser">
-                <option value="chrome">Chrome</option>
-                <option value="safari">Safari</option>
-                <option value="edge">Edge</option>
-                <option value="brave">Brave</option>
-                <option value="other">Other</option>
-            </select>
+            <fieldset>
+                <legend>Survey Questions</legend>
 
-            <br><br>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-            <!-- Pet Question -->
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
 
-            <br><br>
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                      placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                </div>
 
-            <!-- Places Lived -->
-            <label for="feedback">List the places you have lived:</label><br>
-            <textarea id="feedback" name="feedback" rows="4"
-              placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+            </fieldset>
 
-            <br><br>
-
-            <!-- Submit Button -->
             <button type="submit">Submit Poll</button>
 
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2026 My Poll Page</p>
+        <p>&copy; 2026 User Poll</p>
     </footer>
 
 </body>
