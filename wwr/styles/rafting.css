@@ -180,3 +180,108 @@ article {
     display: flex;
     gap: 10px;
 }
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.map,
+.contact-form {
+    width: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.employees {
+    text-align: center;
+}
+
+.employee-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.employees img {
+    width: 150px;
+}
+
+/* Contact Form Layout */
+.contact-form form {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px 15px;
+    max-width: 500px;
+}
+
+/* Labels */
+.contact-form label {
+    text-align: right;
+    padding-top: 5px;
+}
+
+/* Inputs & Textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+/* Make textarea span full width */
+.contact-form textarea {
+    grid-column: 2 / 3;
+    height: 100px;
+}
+
+/* Message purpose title */
+.contact-form p {
+    grid-column: 1 / 2;
+    text-align: right;
+    margin: 0;
+    padding-top: 5px;
+}
+
+/* Radio buttons group */
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form label input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Radio options container (stack neatly) */
+.contact-form label:has(input[type="radio"]) {
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+/* Checkbox */
+.contact-form label:has(input[type="checkbox"]) {
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+/* Button */
+.contact-form button {
+    grid-column: 2 / 3;
+    width: 150px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
