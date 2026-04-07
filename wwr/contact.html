@@ -24,7 +24,7 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
+        <h1>Contact White Water Rafting Company</h1>
 
         <section class="contact-info">
             <h2>Company Information</h2>
@@ -57,15 +57,26 @@
                     <input type="email" id="email" name="email" required>
 
                     <p>Purpose of Message:</p>
-                    <label><input type="radio" name="purpose" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose"> Reservation Question</label>
-                    <label><input type="radio" name="purpose"> Website Suggestion</label>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
 
-                    <label>
-                        <input type="checkbox" name="subscribe">
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type here"></textarea>
+
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
                         Please subscribe me to the monthly newsletter
                     </label>
 
@@ -80,7 +91,7 @@
             <div class="employee-row">
                 <figure>
                     <img src="images/employee1.jpg" alt="John Doe - River Guide">
-                    <figcaption>John Doe –Safety Instructor</figcaption>
+                    <figcaption>John Doe – Safety Instructor</figcaption>
                 </figure>
 
                 <figure>
@@ -89,8 +100,8 @@
                 </figure>
 
                 <figure>
-                    <img src="images/employee3.jpg" alt="Mike Johnson - Tour Manager">
-                    <figcaption>Mike Tara – Tour Manager</figcaption>
+                    <img src="images/employee3.jpg" alt="Ohikwemi Tara - Tour Manager">
+                    <figcaption>Ohikwemi Tara – Tour Manager</figcaption>
                 </figure>
             </div>
         </section>
